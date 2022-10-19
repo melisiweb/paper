@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import { ConversionRates } from "./components/conversion-rates";
 
 const App: React.FC = () => {
@@ -9,7 +9,9 @@ const App: React.FC = () => {
         <Grid container paddingX={{ xs: 2, md: 0 }}>
           <Grid item md />
           <Grid item xs={12} md={6}>
-            <ConversionRates />
+            <Box mt={8}>
+              <ConversionRates />
+            </Box>
           </Grid>
           <Grid item md />
         </Grid>
